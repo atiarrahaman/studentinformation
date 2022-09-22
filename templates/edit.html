@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+<h3 class="alert alert-info text-center">Edit Information</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+
+            <div class="col-md-4">
+                <form action="" method="POST">
+                   {% csrf_token%}
+                   {{ form.as_p}}
+                  <input type="submit" class="btn btn-success" value="Update">
+                  <a href="{% url 'home' %}" class="btn btn-primary">Back to Home</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestiae modi quis, veritatis sint suscipit sed, perspiciatis tempora eum vel rem nulla et aperiam. Quaerat et sit porro similique qui magni cumque, recusandae officia labore quos animi officiis vel aut aspernatur molestiae amet corrupti voluptates cum! Numquam a cupiditate amet nostrum soluta. Sit ut illum, doloribus tenetur excepturi, repudiandae maxime sed nihil voluptatibus repellendus provident quasi delectus suscipit vitae magnam quia? Sed natus recusandae reprehenderit repudiandae perspiciatis quisquam voluptate, commodi consectetur adipisci repellat et earum illo porro suscipit rem saepe ab quae excepturi? Saepe animi, officiis porro perspiciatis nihil nulla itaque cumque doloremque odit optio eos repellat iusto quibusdam voluptatibus, similique sequi recusandae, consequatur aspernatur deleniti adipisci nemo aperiam earum quod? In recusandae porro excepturi possimus ipsa suscipit temporibus quibusdam, cupiditate, ab voluptatum optio placeat ratione eaque nulla error corrupti eveniet cum amet rerum qui vitae quo fugiat? Non perferendis similique, cum facere consequuntur enim impedit repellendus et doloribus dicta repudiandae reprehenderit soluta maxime dolorem deleniti saepe nam sapiente veniam aliquid! Facilis facere asperiores necessitatibus vero eos eius debitis minus incidunt mollitia! Esse tempore, saepe necessitatibus provident enim asperiores vero aut. Sed quidem perferendis velit atque veritatis porro, voluptates natus?
+    </h1>
+   
+
+{% endblock content%}
